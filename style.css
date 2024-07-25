@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    background-color: #f0f0f0;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+.logo{
+
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+.navigation a:hover{
+    color: #7d59d3;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: #ffff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    color: #3a6cf4;
+margin-top: 10px;
+font-size: 2em;
+font-weight: 600;
+}
+
+.main h3{
+    color: #ffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.main-btn{
+    color: #ffff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color: #7d59d3;
+    transform: scale(1.1);
+}
+
+.social-link a{
+    color: #ffff;
+    font-size: 1.7em;
+    padding-right: 20px;
+    margin-left: 30px;
+    transition: 1.9s ease;
+}
+.social-link a:hover{
+    color: #7d59d3;
+    transform: scale(1.05);
+}
+.profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+    object-fit: cover;
+    margin: 10px;
+    border: 3px solid #7d59d3;
+    position: absolute;
+    right: 100px;
+    bottom: 150px;
+}
+
+.titel{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.card{
+    background-color: #ffff;
+    width: 20.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 1.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card .icons{
+    color: #7d59d3;
+    font-size: 2em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #7d59d3;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+.project {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 200px; /* تقليل المساحة لضمان تناسب العناصر */
+}
+
+.project-card {
+    border: none;
+    border-radius: 15px;
+    margin: 20px;
+    width: 20.25em; /* توحيد عرض البطاقات */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* توسيط العناصر عمودياً */
+    background-color: #ffff;
+    box-shadow: 0 5px 25px rgba(0 0  0/ 15%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 10px 30px rgba(1, 1, 1, 0.25); 
+}
+
+.images {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+}
+
+.images img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.project-info {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    flex: 1; /* تأكد من أن الحاوية تأخذ كامل ارتفاع البطاقة */
+}
+
+.project-cat {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-titel {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.project-titel a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project-titel span {
+    display: block;
+    margin-bottom: 10px;
+}
+.project-titel a:hover{
+    color: #7d59d3;
+}
+
+.about-card{
+
+     border-radius: 15px;
+     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+     width: 500px;
+     height: 400px;
+     padding: 20px;
+     text-align: start;
+     margin: 10px;
+}
+.about-card h3{
+    text-align: center;
+    color: #7d59d3;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.contact{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 200px;
+}
+footer{
+    height: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    padding: 10px;
+}
+footer span{
+    color: #3a6cf4;
+}
+
+
+ @media (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .profile {
+        right: 50px;
+        bottom: 100px;
+        width: 200px;
+        height: 500px;
+    }
+    .titel {
+        font-size: 1.5em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 50px 20px;
+    }
+    .main {
+        padding: 50px 20px;
+    }
+    .project {
+        padding: 50px 20px;
+    }
+    .contact {
+        padding: 50px 20px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 50px;
+    }
+    .profile {
+        right: 50px;
+        bottom: 100px;
+        width: 250px;
+        height: 250px;
+        position:sticky;
+    }
+    .titel {
+        font-size: 1.8em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 50px 50px;
+    }
+    .main {
+        margin: 20px;
+        padding: 50px 50px;
+    }
+    .project {
+        padding: 50px 50حء ;
+    }
+    .contact {
+        padding: 50px 50px;
+    }
+}
+ 
+
+
+@media (min-width: 1025px) {
+    header {
+        padding: 10px 200px;
+    }
+    .profile {
+        right: 100px;
+        bottom: 150px;
+        width: 300px;
+        height: 300px;
+    }
+    .titel {
+        font-size: 2.2em;
+    }
+    .content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    section {
+        padding: 100px 200px;
+    }
+    .main {
+        padding: 100px 200px;
+    }
+    .project {
+        padding: 50px 200px;
+    }
+    .contact {
+        padding: 50px 200px;
+    }
+}
+
+
+
