@@ -234,7 +234,7 @@ font-weight: 600;
      box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
      width: 500px;
      height: 400px;
-    font-size: 15px;
+     font-size: 15px;
      padding: 20px;
      text-align: center;
      margin: 10px;
@@ -267,13 +267,14 @@ footer span{
         padding: 10px;
         flex-direction: column;
     }
-    .profile {
-        right: 50px;
-        bottom: 100px;
+    .profile {  
+        margin-top: 50px; 
         width: 200px;
-        height: 500px;
+        height: 200px;
+        position:sticky;
     }
-         .about-card{
+    .about-card{
+    
         font-size: 12px;
         width: 300px;
         height: 400px;
@@ -289,26 +290,34 @@ footer span{
         padding: 50px 20px;
     }
     .main {
-        padding: 50px 20px;
-    }
+        min-height: 600px;
+        margin: 10px;
+     }
     .project {
         padding: 50px 20px;
     }
     .contact {
         padding: 50px 20px;
     }
+    .navigation a{
+        font-size: 12px;
+        padding: 10px;
+    }
 }
 
 
 @media (max-width: 1024px) {
+    .main {
+       min-height: 600px;
+       margin: 10px;
+    }
     header {
         padding: 10px 50px;
     }
-    .profile {
-        right: 50px;
-        bottom: 100px;
-        width: 250px;
-        height: 250px;
+    .profile { 
+        margin-top: 50px;   
+        width: 200px;
+        height: 200px;
         position:sticky;
     }
     .titel {
@@ -330,6 +339,10 @@ footer span{
     }
     .contact {
         padding: 50px 50px;
+    }
+    .navigation a{
+        font-size: 12px;
+        padding: 10px;
     }
 }
  
